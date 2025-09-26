@@ -6,8 +6,8 @@
     "snapshots": [
       "https://storage.googleapis.com/aztec-testnet/snapshots/staging-public/"
     ],
-    "registryAddress": "0x2e48addca360da61e4d6c21ff2b1961af56eb83b",
-    "feeAssetHandlerAddress": "0xb46dc3d91f849999330b6dd93473fa29fc45b076",
+    "registryAddress": "0xe83067689f3cf837ccbf8a3966f0e0fe985dcb3e",
+    "feeAssetHandlerAddress": "0xa8159159a9e2a57c6e8c59fd5b3dd94c6dbddfe3",
     "l1ChainId": 11155111
   },
   "staging-ignition": { 
@@ -17,8 +17,8 @@
     "snapshots": [
       "https://storage.googleapis.com/aztec-testnet/snapshots/staging-ignition/"
     ],
-    "registryAddress": "0x5f85fa0f40bc4b5ccd53c9f34258aa55d25cdde8",
-    "feeAssetHandlerAddress": "0x67d645b0a3e053605ea861d7e8909be6669812c4",
+    "registryAddress": "0x53e2c2148da04fd0e8dd282f016f627a187c292c",
+    "feeAssetHandlerAddress": "0x3613b834544030c166a4d47eca14b910f4816f57",
     "l1ChainId": 11155111
   },
   "testnet": {
