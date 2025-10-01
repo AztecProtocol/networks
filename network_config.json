@@ -6,7 +6,7 @@
     "snapshots": [
       "https://storage.googleapis.com/aztec-testnet/snapshots/staging-public/"
     ],
-    "registryAddress": "0xe83067689f3cf837ccbf8a3966f0e0fe985dcb3e",
+    "registryAddress": "0xb83df322f2b521fdee64f7222a049203e8958d8a",
     "feeAssetHandlerAddress": "0xa8159159a9e2a57c6e8c59fd5b3dd94c6dbddfe3",
     "l1ChainId": 11155111
   },
@@ -17,8 +17,8 @@
     "snapshots": [
       "https://storage.googleapis.com/aztec-testnet/snapshots/staging-ignition/"
     ],
-    "registryAddress": "0x53e2c2148da04fd0e8dd282f016f627a187c292c",
-    "feeAssetHandlerAddress": "0x3613b834544030c166a4d47eca14b910f4816f57",
+    "registryAddress": "0xdfb7b3e26c90642a3068ce584f450308bffb80d2",
+    "feeAssetHandlerAddress": "0x41f233787659b5996d835c529b4889392431d2e7",
     "l1ChainId": 11155111
   },
   "testnet": {
