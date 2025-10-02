@@ -17,8 +17,8 @@
     "snapshots": [
       "https://storage.googleapis.com/aztec-testnet/snapshots/staging-ignition/"
     ],
-    "registryAddress": "0xdfb7b3e26c90642a3068ce584f450308bffb80d2",
-    "feeAssetHandlerAddress": "0x41f233787659b5996d835c529b4889392431d2e7",
+    "registryAddress": "0xd5e2c89160b0fbc6050e16babeaf11ab7de1ec72",
+    "feeAssetHandlerAddress": "0xbae3a53c418a251c27e2c5b044afea6d7ca58168",
     "l1ChainId": 11155111
   },
   "testnet": {
