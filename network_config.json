@@ -6,7 +6,7 @@
       "enr:-LO4QLwNo4LfTH2SBERo6BecNf9OUkGPESpcZCpNjEBIUbVFZE-4JHR2-azPdYSSqrEbqoyUng_gN0uvKP_Y0I76WE8EhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEI7nykIlzZWNwMjU2azGhAsQLIIY2n2jwc-t1AoQXw0OxLACQakja5RSbwfKKAPrng3VkcIKd0A"
     ],
     "snapshots": [
-      "https://storage.googleapis.com/aztec-testnet/snapshots/staging-public/"
+      "https://aztec-labs-snapshots.com/staging-public/"
     ],
     "registryAddress": "0xb83df322f2b521fdee64f7222a049203e8958d8a",
     "feeAssetHandlerAddress": "0xa8159159a9e2a57c6e8c59fd5b3dd94c6dbddfe3",
@@ -19,7 +19,7 @@
       "enr:-LO4QPi-mMZ4_bLwQE9AB-vzVjwvfrmGtz59MuyClA2toznqC3m83Tz5dyVpVuDntKRfiNKA7iMUBL8EA7XNeAB8094EhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEIqgrUYlzZWNwMjU2azGhA4hb7dUIA0YfCCRGkKQAo7GXWoUXio_NzHdjzgi_5UU2g3VkcIKd0A"
     ],
     "snapshots": [
-      "https://storage.googleapis.com/aztec-testnet/snapshots/staging-ignition/"
+      "https://aztec-labs-snapshots.com/staging-ignition/"
     ],
     "registryAddress": "0x8a60ac7927179954d29bffd7f02bb670947ae749",
     "feeAssetHandlerAddress": "0x6dde6de536eeeadc3e3dbfef4cb27493972b9853",
@@ -32,19 +32,21 @@
       "enr:-LO4QNTdBJe-2tIfXpzJmu4Tise0rRdPSn2gwQMtkVPe40szAdpWRgixGub2iUXMcxSQuQ8nkKh-GSvQpRKqw2XzUhQEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEIrZz14lzZWNwMjU2azGhApwZiWnsA8TFqvz-sGDrgbi1AypT4QXJfFWdYOz2yeVtg3VkcIKd0A"
     ],
     "snapshots": [
-      "https://storage.googleapis.com/aztec-testnet/snapshots/testnet/"
+      "https://aztec-labs-snapshots.com/testnet/"
     ],
     "registryAddress": "0xc2f24280f5c7f4897370dfdeb30f79ded14f1c81",
     "feeAssetHandlerAddress": "0x50513c3713ffd33301e85f30d86ab764df421fe9",
     "l1ChainId": 11155111
   },
   "mainnet": {
-    "bootnodes": [
+    "bootnodes": [ 
       "enr:-Ky4QKfjSRUjTZtECqEDcBRIZ9csT6-tNYm4c7u8wevju7gAFeQiOr96YUM3GT811gWQ7dTBNlH9MVWHSS2y9KYsMgsEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQiUGTtiXNlY3AyNTZrMaECy4Jsu1q_v6h66yi49G3D75G4RgaA_KoFQep112evENSDdWRwgp3Q",
       "enr:-Ky4QHjSIFZWkQ6-etNQ7IsX1BvcbztYh0ea1svSJu4w_eiVK3JyIZYbV0U82271DpA0-yjLXV7EJz25CoajccyYifIEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQj5pOPiXNlY3AyNTZrMaEDv3oCuiQPtMPBQvBfNhljpk77zfB3LEbbs57Z2TtjNpSDdWRwgp3Q",
       "enr:-Ky4QKlrL37e_eXt8IyZbl7Uxc5ReK_PKJUDGd6Uffm0Y0qEVUmUcZla6uyZj6iYM0UZdgwOQYsbNowaEm3E4DyXhQEEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQjx6S0iXNlY3AyNTZrMaEC1wiZRbCgTtGUIn10W_ryCOTcItCsnlAaWetP60yFLyCDdWRwgp3Q"
     ],
-    "snapshots": [],
+    "snapshots": [
+      "https://aztec-labs-snapshots.com/mainnet/"
+    ],
     "registryAddress": "",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 1
