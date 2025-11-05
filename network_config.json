@@ -34,8 +34,8 @@
     "snapshots": [
       "https://aztec-labs-snapshots.com/testnet/"
     ],
-    "registryAddress": "0xc2f24280f5c7f4897370dfdeb30f79ded14f1c81",
-    "feeAssetHandlerAddress": "0x50513c3713ffd33301e85f30d86ab764df421fe9",
+    "registryAddress": "0xcc281dbb57895eb0d339372763b92410786c142e",
+    "feeAssetHandlerAddress": "0x2c61097eab6c61dd4a97d9bb9157c7b708ea093e",
     "l1ChainId": 11155111
   },
   "mainnet": {
