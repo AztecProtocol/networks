@@ -1,0 +1,69 @@
+name: Deploy network_config.json to S3
+
+on:
+  push:
+    branches:
+      - main
+# Intentionally not checking for actual file changes right now to allow for testing without content changes
+
+jobs:
+  deploy:
+    name: Deploy to S3 and Invalidate CloudFront
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: eu-west-2
+      
+      - name: Copy network_config.json to S3
+        run: |
+          echo "Copying network_config.json to S3 bucket aztec-network-metadata..."
+          aws s3 cp network_config.json s3://aztec-network-metadata/network_config.json \
+            --content-type "application/json"
+          echo "Successfully uploaded network_config.json to S3"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          echo "Creating CloudFront invalidation for distribution E2P2Y6OY8B3H98..."
+          INVALIDATION_ID=$(aws cloudfront create-invalidation \
+            --distribution-id E2P2Y6OY8B3H98 \
+            --paths "/network_config.json" \
+            --query 'Invalidation.Id' \
+            --output text)
+          echo "CloudFront invalidation created with ID: $INVALIDATION_ID"
+
+          echo "Waiting for invalidation to complete..."
+          aws cloudfront wait invalidation-completed \
+            --distribution-id E2P2Y6OY8B3H98 \
+            --id "$INVALIDATION_ID"
+          echo "CloudFront cache invalidation completed successfully"
+
+      - name: Verify deployment
+        run: |
+          echo "Verifying deployment..."
+          echo "S3 URL: https://aztec-network-metadata.s3.amazonaws.com/network_config.json"
+          echo "CloudFront URL: https://metadata.aztec.network/network_config.json"
+
+          # Download the deployed file from CloudFront
+          echo "Downloading deployed file from metadata.aztec.network..."
+          curl -s https://metadata.aztec.network/network_config.json -o deployed_network_config.json
+
+          # Compare the files
+          echo "Comparing local and deployed files..."
+          if diff -u network_config.json deployed_network_config.json; then
+            echo "✅ Verification successful: Deployed file matches repository file"
+          else
+            echo "❌ Verification failed: Files do not match!"
+            echo "Differences found between repository and deployed version"
+            exit 1
+          fi
