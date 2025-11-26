@@ -1,0 +1,96 @@
+name: Validate Network Config
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate Configuration
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating network_config.json..."
+          if jq empty network_config.json; then
+            echo "JSON is valid"
+          else
+            echo "JSON validation failed"
+            exit 1
+          fi
+
+      - name: Validate configuration values
+        run: |
+          echo "Validating configuration values..."
+
+          ERRORS=0
+
+          # Get all network names
+          NETWORKS=$(jq -r 'keys[]' network_config.json)
+
+          for NETWORK in $NETWORKS; do
+            echo ""
+            echo "Checking network: $NETWORK"
+
+            # Validate bootnodes start with 'enr:-'
+            echo "  - Validating bootnodes..."
+            INVALID_BOOTNODES=$(jq -r --arg net "$NETWORK" '.[$net].bootnodes[]' network_config.json | grep -v '^enr:-' || true)
+            if [ -n "$INVALID_BOOTNODES" ]; then
+              echo "    ERROR: Invalid bootnode(s) found (must start with 'enr:-'):"
+              echo "$INVALID_BOOTNODES" | sed 's/^/      /'
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "    OK: All bootnodes valid"
+            fi
+
+            # Validate registryAddress
+            echo "  - Validating registryAddress..."
+            REGISTRY_ADDR=$(jq -r --arg net "$NETWORK" '.[$net].registryAddress' network_config.json)
+            if [ -z "$REGISTRY_ADDR" ]; then
+              echo "    ERROR: registryAddress is required and cannot be empty"
+              ERRORS=$((ERRORS + 1))
+            elif ! echo "$REGISTRY_ADDR" | grep -qE '^0x[0-9a-fA-F]{40}$'; then
+              echo "    ERROR: Invalid registryAddress: $REGISTRY_ADDR (must be 0x followed by 40 hex characters)"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "    OK: registryAddress is valid"
+            fi
+
+            # Validate feeAssetHandlerAddress
+            echo "  - Validating feeAssetHandlerAddress..."
+            FEE_ADDR=$(jq -r --arg net "$NETWORK" '.[$net].feeAssetHandlerAddress' network_config.json)
+            if [ -n "$FEE_ADDR" ]; then
+              if ! echo "$FEE_ADDR" | grep -qE '^0x[0-9a-fA-F]{40}$'; then
+                echo "    ERROR: Invalid feeAssetHandlerAddress: $FEE_ADDR (must be 0x followed by 40 hex characters or empty string)"
+                ERRORS=$((ERRORS + 1))
+              else
+                echo "    OK: feeAssetHandlerAddress is valid"
+              fi
+            else
+              echo "    OK: feeAssetHandlerAddress is empty"
+            fi
+
+            # Validate l1ChainId is a number
+            echo "  - Validating l1ChainId..."
+            L1_CHAIN_ID=$(jq -r --arg net "$NETWORK" '.[$net].l1ChainId' network_config.json)
+            if ! echo "$L1_CHAIN_ID" | grep -qE '^[0-9]+$'; then
+              echo "    ERROR: Invalid l1ChainId: $L1_CHAIN_ID (must be a number)"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "    OK: l1ChainId is valid ($L1_CHAIN_ID)"
+            fi
+          done
+
+          echo ""
+          if [ $ERRORS -gt 0 ]; then
+            echo "Validation failed with $ERRORS error(s)"
+            exit 1
+          else
+            echo "All validation checks passed!"
+          fi
