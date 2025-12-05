@@ -21,8 +21,8 @@
     "snapshots": [
       "https://aztec-labs-snapshots.com/staging-ignition/"
     ],
-    "registryAddress": "0x8a60ac7927179954d29bffd7f02bb670947ae749",
-    "feeAssetHandlerAddress": "0x6dde6de536eeeadc3e3dbfef4cb27493972b9853",
+    "registryAddress": "0x1b3827e3ebe2a047c65432b1d117d1475eda7870",
+    "feeAssetHandlerAddress": "0x8e71ebae31eef894129f977eb96f52bc8742a442",
     "l1ChainId": 11155111
   },
   "testnet": {
