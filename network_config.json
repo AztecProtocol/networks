@@ -1,4 +1,15 @@
 {
+   "devnet": {
+    "bootnodes": [
+    "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
+    ],
+    "snapshots": [
+      "https://aztec-labs-snapshots.com/devnet/"
+    ],
+    "registryAddress": "",
+    "feeAssetHandlerAddress": "",
+    "l1ChainId": 11155111
+  },
   "staging-public": {
     "bootnodes": [
       "enr:-LO4QByYEImKOhVk1eW2haEtDs2hT5qv18c3kopfzUF18AcudF-vHjEZMSi8PQ9jiVJb7XjQeh4dKa7LCMixUoM4t0UEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEI8mx0YlzZWNwMjU2azGhA7mqxGD1MiN_fXZO1xyF4hpN-DDeKYZH4p5a3HNZZqh0g3VkcIKd0A",
