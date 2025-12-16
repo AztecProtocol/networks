@@ -6,7 +6,7 @@
     "snapshots": [
       "https://aztec-labs-snapshots.com/devnet/"
     ],
-    "registryAddress": "0x0000000000000000000000000000000000000000",
+    "registryAddress": "0x548ed380440c3eef42f222ceda1d6770b8999f8c",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 11155111
   },
