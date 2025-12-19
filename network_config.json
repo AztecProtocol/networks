@@ -19,8 +19,8 @@
     "snapshots": [
       "https://aztec-labs-snapshots.com/staging-public/"
     ],
-    "registryAddress": "0xb83df322f2b521fdee64f7222a049203e8958d8a",
-    "feeAssetHandlerAddress": "0xa8159159a9e2a57c6e8c59fd5b3dd94c6dbddfe3",
+    "registryAddress": "0xfd071143cfa3f70d8a03ddc867d9c7473e08110a",
+    "feeAssetHandlerAddress": "0x0a7caa7d4d91845ca4605694ca15bb9a1986ec0a",
     "l1ChainId": 11155111
   },
   "staging-ignition": {
