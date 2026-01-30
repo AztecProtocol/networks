@@ -49,8 +49,8 @@
       "https://files5.blacknodes.net/Aztec/",
       "https://snapshots-data.aztec.graphops.xyz/"
     ],
-    "registryAddress": "0x459498e6bf7967bad0966353b691ef4395432479",
-    "feeAssetHandlerAddress": "0x36f39b866a2326a94a9ee2961008ea5ee9f04d7f",
+    "registryAddress": "0xa0bfb1b494fb49041e5c6e8c2c1be09cd171c6ba",
+    "feeAssetHandlerAddress": "0x5602c39a6e9c5ace589f64f754927bcda4f4bfc9",
     "l1ChainId": 11155111
   },
   "mainnet": {
