@@ -1,26 +1,11 @@
 {
-   "devnet": {
+  "devnet": {
     "bootnodes": [
-    "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
+      "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
     ],
-    "snapshots": [
-      "https://aztec-labs-snapshots.com/devnet/"
-    ],
+    "snapshots": ["https://aztec-labs-snapshots.com/devnet/"],
     "registryAddress": "0x548ed380440c3eef42f222ceda1d6770b8999f8c",
     "feeAssetHandlerAddress": "",
-    "l1ChainId": 11155111
-  },
-  "staging-public": {
-    "bootnodes": [
-      "enr:-LO4QByYEImKOhVk1eW2haEtDs2hT5qv18c3kopfzUF18AcudF-vHjEZMSi8PQ9jiVJb7XjQeh4dKa7LCMixUoM4t0UEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEI8mx0YlzZWNwMjU2azGhA7mqxGD1MiN_fXZO1xyF4hpN-DDeKYZH4p5a3HNZZqh0g3VkcIKd0A",
-      "enr:-LO4QJ4muM-dC-5acMDxJotHyfDYfIDfpSCWY4zf1qsFNw_3MBZQnF9E-Sls4-vAJ1mjzr0J7zP96O6sAbSj2j4f2L4EhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEI_YzS4lzZWNwMjU2azGhAlCcUe4aoKJUqTDinwSFz7v-M7h1xHWDCtkQxBulmyo-g3VkcIKd0A",
-      "enr:-LO4QLwNo4LfTH2SBERo6BecNf9OUkGPESpcZCpNjEBIUbVFZE-4JHR2-azPdYSSqrEbqoyUng_gN0uvKP_Y0I76WE8EhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEI7nykIlzZWNwMjU2azGhAsQLIIY2n2jwc-t1AoQXw0OxLACQakja5RSbwfKKAPrng3VkcIKd0A"
-    ],
-    "snapshots": [
-      "https://aztec-labs-snapshots.com/staging-public/"
-    ],
-    "registryAddress": "0xfd071143cfa3f70d8a03ddc867d9c7473e08110a",
-    "feeAssetHandlerAddress": "0x0a7caa7d4d91845ca4605694ca15bb9a1986ec0a",
     "l1ChainId": 11155111
   },
   "staging-ignition": {
@@ -29,9 +14,7 @@
       "enr:-LO4QPlSjy2E9IcMJrm3pG0Mip1-vI_h1938EhHY3Uu3BvKIYY25tA0lS8AfKR_CKf19g24w9rDywcfbU1UlvhYtO_kEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEIlloyIlzZWNwMjU2azGhA5-g_q23VshWq4a36nlaJz92kRSTzLhIRJjUS4A3OeYJg3VkcIKd0A",
       "enr:-LO4QPi-mMZ4_bLwQE9AB-vzVjwvfrmGtz59MuyClA2toznqC3m83Tz5dyVpVuDntKRfiNKA7iMUBL8EA7XNeAB8094EhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjI3ODAyMzktMmRhOWY4MDGCaWSCdjSCaXCEIqgrUYlzZWNwMjU2azGhA4hb7dUIA0YfCCRGkKQAo7GXWoUXio_NzHdjzgi_5UU2g3VkcIKd0A"
     ],
-    "snapshots": [
-      "https://aztec-labs-snapshots.com/staging-ignition/"
-    ],
+    "snapshots": ["https://aztec-labs-snapshots.com/staging-ignition/"],
     "registryAddress": "0x1b3827e3ebe2a047c65432b1d117d1475eda7870",
     "feeAssetHandlerAddress": "0x8e71ebae31eef894129f977eb96f52bc8742a442",
     "l1ChainId": 11155111
@@ -54,14 +37,12 @@
     "l1ChainId": 11155111
   },
   "mainnet": {
-    "bootnodes": [ 
+    "bootnodes": [
       "enr:-Ky4QKfjSRUjTZtECqEDcBRIZ9csT6-tNYm4c7u8wevju7gAFeQiOr96YUM3GT811gWQ7dTBNlH9MVWHSS2y9KYsMgsEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQiUGTtiXNlY3AyNTZrMaECy4Jsu1q_v6h66yi49G3D75G4RgaA_KoFQep112evENSDdWRwgp3Q",
       "enr:-Ky4QHjSIFZWkQ6-etNQ7IsX1BvcbztYh0ea1svSJu4w_eiVK3JyIZYbV0U82271DpA0-yjLXV7EJz25CoajccyYifIEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQj5pOPiXNlY3AyNTZrMaEDv3oCuiQPtMPBQvBfNhljpk77zfB3LEbbs57Z2TtjNpSDdWRwgp3Q",
       "enr:-Ky4QKlrL37e_eXt8IyZbl7Uxc5ReK_PKJUDGd6Uffm0Y0qEVUmUcZla6uyZj6iYM0UZdgwOQYsbNowaEm3E4DyXhQEEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQjx6S0iXNlY3AyNTZrMaEC1wiZRbCgTtGUIn10W_ryCOTcItCsnlAaWetP60yFLyCDdWRwgp3Q"
     ],
-    "snapshots": [
-      "https://aztec-labs-snapshots.com/mainnet/"
-    ],
+    "snapshots": ["https://aztec-labs-snapshots.com/mainnet/"],
     "registryAddress": "0x35b22e09Ee0390539439E24f06Da43D83f90e298",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 1
