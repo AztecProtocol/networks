@@ -4,7 +4,7 @@
       "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
     ],
     "snapshots": ["https://aztec-labs-snapshots.com/devnet/v4-devnet-1/snapshots/"],
-    "registryAddress": "0xe6a9dc4f8017980c7ce03f0a3e94c2785f05d831",
+    "registryAddress": "0x0049fad5be616aaf33c173b4c4c29b1c79f063f5",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 11155111
   },
