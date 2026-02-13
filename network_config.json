@@ -3,8 +3,8 @@
     "bootnodes": [
       "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
     ],
-    "snapshots": ["https://aztec-labs-snapshots.com/devnet/"],
-    "registryAddress": "0x548ed380440c3eef42f222ceda1d6770b8999f8c",
+    "snapshots": ["https://aztec-labs-snapshots.com/devnet/v4-devnet-1/snapshots/"],
+    "registryAddress": "0xe6a9dc4f8017980c7ce03f0a3e94c2785f05d831",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 11155111
   },
