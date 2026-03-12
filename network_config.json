@@ -52,6 +52,8 @@
       "https://files5.blacknodes.net/Aztec/",
       "https://snapshots-data.aztec.graphops.xyz/"
     ],
+    "blobFileStoreUrls": ["https://aztec-labs-snapshots.com/testnet/blobs"],
+    "txCollectionFileStoreUrls": ["https://aztec-labs-snapshots.com/testnet/txs"],
     "registryAddress": "0xa0bfb1b494fb49041e5c6e8c2c1be09cd171c6ba",
     "feeAssetHandlerAddress": "0x5602c39a6e9c5ace589f64f754927bcda4f4bfc9",
     "l1ChainId": 11155111
