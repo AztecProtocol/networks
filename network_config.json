@@ -19,6 +19,16 @@
     "feeAssetHandlerAddress": "0xed9c5557d2e0abcc7c7fca958ee4292199413494",
     "l1ChainId": 11155111
   },
+  "v4-devnet-3": {
+    "bootnodes": [
+      "enr:-LO4QKo50w8xA0SzFPBpgsvCD7lKGFgd73MIR9tdKXsrqqShLRfpGawmT6fm2HfDnK1joMDbAeKlz10dpB7Ak0cpY6QEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMjY3MjM0MGQtMWRkMjY0NGGCaWSCdjSCaXCEiG3CWYlzZWNwMjU2azGhA-DwQju-2ID1IWXE3ta_NZSKgeWIhfK1QBeUMTEXSJE5g3VkcIKeHw"
+    ],
+    "snapshots": ["https://aztec-labs-snapshots.com/devnet/v4-devnet-3/snapshots"],
+    "blobFileStoreUrls": ["https://aztec-labs-snapshots.com/devnet/v4-devnet-3/blobs"],
+    "registryAddress": "0xb7573d051331593e82062159552719d0f8dfb7e6",
+    "feeAssetHandlerAddress": "0xa9a641a3761888ca4288709639ca0af7efbfcc43",
+    "l1ChainId": 11155111
+  },
   "devnet": {
     "bootnodes": [
       "enr:-LO4QIbsvSZWvVLmeiPEi0Wl-9FBqyWjzily-4XV-eBuQ-G4ZNX3OwiVYQeK-HIOQO-mJfmnVaIz0Ytvz6O_AsvdO6sEhWF6dGVjqDAwLTExMTU1MTExLTAwMDAwMDAwLTAtMDM2NGJhY2EtMjk1NzJiMzaCaWSCdjSCaXCEIpOX4IlzZWNwMjU2azGhAn-zj3eFA5KEDfFNTO3lC2EKq7omrTaqhf-e3E309R7ag3VkcIKd0A"
