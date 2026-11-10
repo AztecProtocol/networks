@@ -24,9 +24,9 @@
       "enr:-Ky4QHjSIFZWkQ6-etNQ7IsX1BvcbztYh0ea1svSJu4w_eiVK3JyIZYbV0U82271DpA0-yjLXV7EJz25CoajccyYifIEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQj5pOPiXNlY3AyNTZrMaEDv3oCuiQPtMPBQvBfNhljpk77zfB3LEbbs57Z2TtjNpSDdWRwgp3Q",
       "enr:-Ky4QKlrL37e_eXt8IyZbl7Uxc5ReK_PKJUDGd6Uffm0Y0qEVUmUcZla6uyZj6iYM0UZdgwOQYsbNowaEm3E4DyXhQEEhWF6dGVjoTAwLTEtMDAwMDAwMDAtMC0yMjc4MDIzOS0wYzc1NzZkM4JpZIJ2NIJpcIQjx6S0iXNlY3AyNTZrMaEC1wiZRbCgTtGUIn10W_ryCOTcItCsnlAaWetP60yFLyCDdWRwgp3Q"
     ],
-    "snapshots": ["https://aztec-labs-snapshots.com/mainnet/"],
-    "blobFileStoreUrls": ["https://aztec-labs-snapshots.com/mainnet/blobs"],
-    "txCollectionFileStoreUrls": ["https://aztec-labs-snapshots.com/mainnet/txs"],
+    "snapshots": ["https://aztec-labs-snapshots.com/mainnet/", "https://aztec-snapshots.ipstake.eu/mainnet/"],
+    "blobFileStoreUrls": ["https://aztec-labs-snapshots.com/mainnet/blobs", "https://aztec-snapshots.ipstake.eu/mainnet/blobs"],
+    "txCollectionFileStoreUrls": ["https://aztec-labs-snapshots.com/mainnet/txs", "https://aztec-snapshots.ipstake.eu/mainnet/txs"],
     "registryAddress": "0x35b22e09Ee0390539439E24f06Da43D83f90e298",
     "feeAssetHandlerAddress": "",
     "l1ChainId": 1
